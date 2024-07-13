@@ -6,10 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+        }
+        .box{
+            background-color: darkcyan;
+            padding: 20px;
+            border-radius: 10px;
+            height: 200px;
+            font-size: 20px;
+            color: white;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h2>Fist Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur minus natus quidem quam ipsum eius at aspernatur eveniet repudiandae fugiat magni, exercitationem perspiciatis! Voluptates architecto excepturi labore id ullam.</p>
+        </div>
+        <div class="box">
+            <h2>second Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur minus natus quidem quam ipsum eius at aspernatur eveniet repudiandae fugiat magni, exercitationem perspiciatis! Voluptates architecto excepturi labore id ullam.</p>
+        </div>
+    </div>
 </body>
 
 </html>
